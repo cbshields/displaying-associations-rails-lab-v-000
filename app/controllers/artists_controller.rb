@@ -50,8 +50,4 @@ class ArtistsController < ApplicationController
     params.require(:artist).permit(:name)
   end
 
-  def song_count
-    artist = Artist.find(params[:id])
-    artist.songs.count
-  end
 end
