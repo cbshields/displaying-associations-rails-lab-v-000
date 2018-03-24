@@ -9,6 +9,9 @@
        -
        <%= song.title %>
      </a>
+     <a href="<%= artist_path(@artist) %>">
+          <%= song.artist_name %>
+        </a>
      </li>
 <% end %>
 </ul>
