@@ -5,11 +5,14 @@
 
     <%= link_to artist.name, artist_path(artist) %>
     (<%= artist.song_count %> <%= "song".pluralize(artist.song_count) %>)
-
+      <ul>
       <% artist.songs.each do |song| %>
-        <ul>
+        
           <%= link_to song.title, song_path(song) %>
-        </ul>
+        
       <% end %>
+    </ul>
+        
+      
 
   <% end %>
